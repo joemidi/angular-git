@@ -1,0 +1,16 @@
+.error {
+	border: 1px solid red;
+	color: red;
+	padding: 1em;
+}
+
+input[type="text"] {
+	font-size: 1em;
+	padding: 0.2em 1em;
+}
+
+input[type=submit] {
+	border: 1px solid #444;
+	font-size: 1em;
+	padding: 0.2em 1em;
+}

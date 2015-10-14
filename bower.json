@@ -1,0 +1,17 @@
+{
+  "name": "angular-git",
+  "version": "1.0.0",
+  "authors": [
+    "Monkey Butt [monkey@butt.com]"
+  ],
+  "description": "fangular angular",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularGit">
+<head>
+	<title>APPPPPPP</title>
+
+	<!-- Load Angular JS TODO: change for CDN -->
+	<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+
+	<!-- Load styles from build! -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<header>
+		<h1>Angular Git</h1>
+	</header>
+
+	<nav role="navigation">
+		<a href="#">Infomation</a>
+		<a href="#">Repositories</a>
+	</nav>
+
+	<main ng-controller="InfoController">
+		<p>Eneter the username of a Github account:</p>
+		<form ng-submit="getInfoFromGithub(accountName)">
+			<p>
+				<input ng-model="accountName" type="text" placeholder="Enter account name">
+				<input type="submit" value="load">
+			</p>
+		</form>
+
+		<hr>
+
+		<p class="error" ng-show="error"> {{error}} </p>
+
+		<div ng-show="data">
+			<img ng-src="{{data.avatar_url}}" title="{{data.name}}" alt="avatar" class="avatar">
+			<div class="gitdata">
+				<p><b>Account Name:</b> {{data.login}} </p>
+				<p><b>User Name:</b> {{data.name}}</p>
+				<p><b>Email:</b> {{data.email}}</p>
+				<p><b>Company:</b> {{data.company}}</p>
+			</div>
+		</div>
+
+
+	</main>
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+	font-family: 'HelveticaNeue-Light', 'Helvetica', sans-serif;
+	font-weight: lighter;
+	color: #444;
+	background: #efefef;
+	margin: 0;
+}
+
+header {
+	background: #646464;
+	padding: 0.5em 10%;
+	color: #f3f3f3;
+}
+
+header h1 {
+	font-size: 1.4em;
+	margin: 0;
+	color: #4285F4;
+	font-weight: normal;
+}
+
+main {
+	margin: 1em 10%;
+}
+
+nav {
+	margin: 1em 10%;
+}
+
+nav a {
+	color: #EA4335;
+	margin-right: 0.5em;
+}
+
+img.avatar {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+	width: 30%;
+	max-width: 300px;
+	height: auto;
+}
+
+div.gitdata {
+	display: inline-block;
+	vertical-align: middle;
+}
+.error {
+	border: 1px solid red;
+	color: red;
+	padding: 1em;
+}
+
+input[type="text"] {
+	font-size: 1em;
+	padding: 0.2em 1em;
+}
+
+input[type=submit] {
+	border: 1px solid #444;
+	font-size: 1em;
+	padding: 0.2em 1em;
+}
